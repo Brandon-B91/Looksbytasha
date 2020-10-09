@@ -10,7 +10,7 @@ modal();
 function outSideClick() {
     window.addEventListener('click', (e) => {
         let modal = document.querySelector('.modal');
-        if (e.target == modal) {
+        if (e.target === modal) {
             modal.style.display = 'none';
         }
     })
