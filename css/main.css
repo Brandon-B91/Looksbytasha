@@ -1,0 +1,311 @@
+    /* Global Styles */
+    
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        line-height: 1.6em;
+    }
+    
+    .active {
+        color: lightpink;
+    }
+    
+    a {
+        text-decoration: none;
+        color: black;
+    }
+    
+    a:hover {
+        color: lightgreen;
+    }
+    
+    ul {
+        list-style-type: none;
+    }
+    
+    .wrapper {
+        height: 100%;
+    }
+    
+    #open {
+        display: none;
+        margin-left: 1em;
+        font-size: 1.5em;
+    }
+    
+    #close {
+        display: none;
+        margin-left: 1em;
+        font-size: 2em;
+    }
+    
+    #open:hover {
+        cursor: pointer;
+    }
+    
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 10vh;
+        width: 100%;
+        background: white;
+    }
+    
+    header img {
+        margin-left: 1em;
+        height: 100%;
+    }
+    
+    header ul {
+        margin-right: 1em;
+    }
+    
+    header li {
+        font-size: 1.2em;
+        display: inline;
+        margin: .5em
+    }
+    
+    .main {
+        position: relative;
+        background-image: url("../img/tools-2.jpeg");
+        background-size: 100% 100%;
+        min-height: 80vh;
+        color: lightpink;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .main::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 1;
+    }
+    
+    .main>* {
+        z-index: 100;
+    }
+    
+    .mainH1 {
+        margin-top: 1em;
+        font-size: 4em;
+    }
+    
+    .mainH2 {
+        margin-top: .5em;
+        font-size: 2em;
+    }
+    
+    .main P {
+        margin-top: 1em;
+        width: 50%;
+        text-align: center;
+    }
+    /* services page */
+    
+    .pricing {
+        margin-top: 2em;
+        margin-bottom: 2em;
+        background: white;
+        padding: 1em;
+        border: 3px solid black;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        color: black;
+        font-size: 1.5em;
+    }
+    
+    .main h1 {
+        margin-top: .8em;
+        font-size: 3em;
+    }
+    
+    .ul-1 {
+        text-align: left;
+    }
+    
+    .ul-2 {
+        text-align: right;
+    }
+    /* gallery page */
+    
+    .gallery-wrapper {
+        margin-top: 2em;
+        margin-bottom: 1em;
+        width: 98%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        grid-gap: .5em;
+        z-index: 2;
+    }
+    
+    .galleryH1 {
+        color: lightpink;
+        margin-top: 1em;
+        z-index: 2;
+    }
+    
+    .gallery-wrapper img {
+        width: 100%;
+        height: 250px;
+    }
+    
+    .gallery-wrapper img:hover {
+        cursor: pointer;
+    }
+    /* footer */
+    
+    footer {
+        height: 10vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        background: white;
+        color: black;
+    }
+    
+    footer p {
+        margin-left: 1em;
+    }
+    
+    .covid {
+        margin-right: 1em;
+    }
+    
+    .covid:hover {
+        cursor: pointer;
+    }
+    /* modal */
+    
+    .modal {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.7);
+        z-index: 999;
+    }
+    
+    .modal-box {
+        margin: 5% auto;
+        width: 65%;
+        height: 80%;
+        background: lightpink;
+        overflow: auto;
+        text-align: center;
+        border-radius: 2%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .modal-box h2 {
+        margin-top: 1em;
+    }
+    
+    .modal-box li {
+        font-size: 1.2em;
+        padding: 0 2em;
+    }
+    
+    .modal-box img {
+        width: 100%;
+        height: 30%;
+    }
+    
+    @media screen and (max-width: 500px) {
+        /* global */
+        header {
+            display: flex;
+            justify-content: center;
+        }
+        #open {
+            display: block;
+            font-size: 1.5em;
+            position: fixed;
+            top: 1em;
+            left: 0;
+            color: black;
+            z-index: 10000;
+        }
+        #close {
+            display: none;
+            font-size: 1.8em;
+            position: fixed;
+            top: 1em;
+            left: 0;
+            color: black;
+            z-index: 10000;
+        }
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            display: none;
+            background: white;
+            opacity: 0.9;
+            z-index: 1000;
+            height: 100%;
+            width: 40vw;
+            text-align: center;
+            animation-name: show-modal;
+            animation-duration: .5s;
+        }
+        nav ul {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            height: 100%;
+        }
+        nav li {
+            font-size: 1.5em;
+        }
+        /* main */
+        .mainH2 {
+            text-align: center;
+        }
+        .main p {
+            width: 80%
+        }
+        /* services */
+        .pricing {
+            font-size: 1.3em;
+        }
+        /* gallery */
+        .galleryH1 {
+            text-align: center;
+        }
+        /* modal */
+        .modal {
+            margin: 5% auto;
+            transition: ease .8s;
+        }
+        .modal img {
+            height: 20%;
+        }
+        .modal-box {
+            font-size: 1em;
+            height: 90%;
+            width: 90%;
+        }
+    }
+    
+    @keyframes show-modal {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 0.9;
+        }
+    }
