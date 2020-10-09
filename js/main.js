@@ -8,11 +8,9 @@ function modal() {
 modal();
 
 function outSideClick() {
-    window.addEventListener('click', (e) => {
-        let modal = document.querySelector('.modal');
-        if (e.target === modal) {
-            modal.style.display = 'none';
-        }
+    let modal = document.querySelector('.modal');
+    modal.addEventListener('click', () => {
+        modal.style.display = 'none';
     })
 }
 outSideClick();
