@@ -288,7 +288,6 @@
         }
         /* modal */
         .modal {
-            margin: 5% auto;
             transition: ease .8s;
         }
         .modal img {
@@ -296,7 +295,7 @@
         }
         .modal-box {
             font-size: 1em;
-            height: 90%;
+            height: 88%;
             width: 90%;
         }
     }
