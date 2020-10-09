@@ -237,7 +237,7 @@
             top: 1em;
             left: 0;
             color: black;
-            z-index: 10000;
+            z-index: 998;
         }
         #close {
             display: none;
@@ -246,7 +246,7 @@
             top: 1em;
             left: 0;
             color: black;
-            z-index: 10000;
+            z-index: 998;
         }
         nav {
             position: fixed;
