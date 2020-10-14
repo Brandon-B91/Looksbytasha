@@ -107,7 +107,7 @@
     }
     
     .main P {
-        margin-top: 1em;
+        margin-top: 2em;
         width: 50%;
         text-align: center;
     }
@@ -146,7 +146,7 @@
     .gallery-wrapper {
         margin-top: 2em;
         margin-bottom: 1em;
-        width: 98%;
+        width: 90%;
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
         grid-gap: .5em;
