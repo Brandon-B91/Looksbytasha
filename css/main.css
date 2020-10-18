@@ -98,7 +98,7 @@
     
     .mainH1 {
         margin-top: 1em;
-        font-size: 1em;
+        font-size: 4em;
     }
     
     .mainH2 {
@@ -114,6 +114,13 @@
     }
     /* services page */
     
+    .servicesH1 {
+        color: lightpink;
+        margin-top: 1em;
+        font-size: 3em;
+        z-index: 2;
+    }
+    
     .pricing {
         margin-top: 2em;
         margin-bottom: 2em;
@@ -123,12 +130,7 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         color: black;
-        width: 95%;
-    }
-    
-    .main h1 {
-        margin-top: .8em;
-        font-size: 4em;
+        width: 40%;
     }
     
     .ul-1 {
@@ -157,6 +159,7 @@
     .galleryH1 {
         color: lightpink;
         margin-top: 1em;
+        font-size: 3em;
         z-index: 2;
     }
     
@@ -167,6 +170,13 @@
     
     .gallery-wrapper img:hover {
         cursor: pointer;
+    }
+    /* contact */
+    
+    .contactH1 {
+        margin-top: 1em;
+        font-size: 3em;
+        text-align: center;
     }
     /* footer */
     
@@ -219,11 +229,17 @@
     
     .modal-box h2 {
         margin-top: 1em;
+        width: 90%;
     }
     
     .modal-box li {
+        width: 90%;
         font-size: 1.2em;
         padding: 0 2em;
+    }
+    
+    .modal-box p {
+        width: 90%;
     }
     
     .modal-box img {
@@ -288,6 +304,7 @@
         /* services */
         .pricing {
             font-size: 1.3em;
+            width: 95%;
         }
         /* gallery */
         .galleryH1 {
